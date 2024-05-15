@@ -65,7 +65,7 @@ plot(meanStepsPerInterval$interval, meanStepsPerInterval$steps,
      main = "Average Steps Taken per Interval")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-4-1.png)<!-- -->
+![unnamed-chunk-4-1.png](/unnamed-chunk-4-1.png)<!-- -->
 
 ```r
 #Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
@@ -126,7 +126,7 @@ hist(newTotalStepsPerDay$steps, main = "New Histogram of Total Steps Per Day",
      border = "black")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-5-1.png)<!-- -->
+![unnamed-chunk-5-1.png](/unnamed-chunk-5-1.png)<!-- -->
 
 ```r
 newMeanTotalSteps <- mean(newTotalStepsPerDay$steps)
@@ -178,4 +178,4 @@ p <- ggplot(newMeanStepsPerInterval, aes(x = interval, y = steps)) +
 p
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-6-1.png)<!-- -->
+![unnamed-chunk-6-1.png](/unnamed-chunk-6-1.png)<!-- -->
