@@ -29,7 +29,7 @@ hist(totalStepsPerDay$steps, main = "Histogram of Total Steps Per Day",
      border = "black")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-3-1.png)<!-- -->
+![unnamed-chunk-3-1.png](PA1_template_files/figure-html/unnamed-chunk-3-1.png)<!-- -->
 
 ```r
 #3. Calculate and report the mean and median of the total number of steps taken per day
