@@ -20,6 +20,7 @@ fullData$date <- as.Date(fullData$date, format = "%Y-%m-%d")
 ```{r}
 # 1. Calculate the total number of steps taken per day
 totalStepsPerDay <- aggregate(steps ~ date, data = fullData, FUN = sum)
+
 # 2. Make a histogram of the total number of steps taken each day
 hist(totalStepsPerDay$steps, main = "Histogram of Total Steps Per Day",
      xlab = "Total Steps",
@@ -31,8 +32,8 @@ hist(totalStepsPerDay$steps, main = "Histogram of Total Steps Per Day",
 meanTotalSteps <- mean(totalStepsPerDay$steps)
 medianTotalSteps <- median(totalStepsPerDay$steps)
 
-
-
+meanTotalSteps
+medianTotalSteps
 
 ```
 
@@ -53,7 +54,7 @@ plot(meanStepsPerInterval$interval, meanStepsPerInterval$steps,
 
 maxAverageSteps <- max(meanStepsPerInterval$steps, na.rm = TRUE)
 
-
+maxAverageSteps
 
 ```
 ## Imputing missing values
